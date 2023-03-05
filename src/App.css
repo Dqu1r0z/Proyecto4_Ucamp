@@ -1,38 +1,166 @@
-.App {
+.header_tacos {
+  background: #262626;
+  color: #D9AF32;
+}
+
+.nav nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #A65437;
+}
+
+.title_nav{
+  margin: 0%;
+  font-style: italic;
+  color: #EBF1F2;
+}
+
+
+.item_nav a {
+  text-decoration: none;
+  color: #EBF1F2;
+  padding: 17px;
+  transition: 0.75s;
+  
+}
+
+.item_nav:hover {
+  background: #F2C166;
+  transition: 0.75s;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px rgb(129, 129, 129) solid;
+}
+
+.imagen_taco{
+  width: 425px;
+  height: 640px;
+  background: url(./img/tacoalpastor.jpg);
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 15px 15px;
+  margin: 50px;
+  transition: 1s;
+}
+
+.imagen_taco:hover {
+  border: 1px red solid;
+  transition: 1s;
+}
+
+.img_texto{
+  text-align: center;
+  justify-content: center;
+  color: rgb(107, 94, 60);
+  padding-top: 105%;
+  font-size: 50px;
+  
+}
+
+.intro_texto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 25px;
+}
+
+.intro_texto h1{
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.intro_texto h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro_texto p{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reserva{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url(./img/tacos-fondo.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  opacity: 50%;
+  padding: 150px;
+  border-bottom: 1px rgb(129, 129, 129) solid; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reserva h2{
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Secular One', sans-serif;
+  color: black;
+  font-size: 35px;
+ 
+}
+
+.reserva p{
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Secular One', sans-serif;
+  color: black;
+  font-size: 35px;
+
+}
+
+.input_reserva {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px;
+  border-bottom: 1px darkgray solid;
+}
+
+.input_reserva input textarea button{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
+  border-radius: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.input_reserva input{
+  margin: 10px;
+  width: 40%;
+  height: 10%;
+  background: #D9AF32
+  ;
+  color: #EBF1F2;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_reserva textarea {
+  width: 50%;
+  height: 25%;
+  margin: 20px;
+  background: #D9AF32
+  ;
+  color: #EBF1F2;
+  border-radius: 15px;
+}
+
+.input_reserva button{
+  width: 15%;
+  height: 10%;
+  background: #A65437;
+  border-radius: 20px;
+}
+
+.pie_pagina{
+  text-align: center;
+  padding: 5%;
+  font-size: 10px;
 }
